@@ -6,7 +6,7 @@
 - Gradle
 - Spring Boot 3.1.5
 
-##NOTE
+## NOTE
 -After cloneing this app to your computer , by default flyway creates test data for you.
 
 ## Basic Flow
