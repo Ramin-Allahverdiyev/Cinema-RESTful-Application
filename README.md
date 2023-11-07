@@ -2,7 +2,7 @@
 -by Ramin Allahverdiyev
 ## Requirements
 
-- Java 8 or later
+- Java 11 or later
 - Gradle
 - Spring Boot 3.1.5
 
