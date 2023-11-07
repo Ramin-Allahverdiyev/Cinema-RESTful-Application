@@ -1,0 +1,7 @@
+#version: '3'
+#services:
+#  cinema:
+#    image: cinema:latest
+#    container_name: cinema
+#    ports:
+#      - "8085:8085"

@@ -1,0 +1,45 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:cnm
+    driver-class-name: org.h2.Driver
+    username: user
+    password: 12345
+  h2:
+    console:
+      enabled: true
+  flyway:
+    url: jdbc:h2:mem:cnm
+    baseline-on-migrate: true
+    user: user
+    password: 12345
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          time_zone: GMT
+    database: h2
+  jackson:
+    date-format: HH:mm dd.MM.yyyy
+
+server:
+  port: 8085
+  forward-headers-strategy: framework
+springdoc:
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+  api-docs.path: /api-docs
+
+root:
+  url: /api/v1/cinema-app
+
+
+secret:
+  key: cdbd7c27ad6ad0955292a0a8a27ab3f71fc7ad600474f6735b92b5244477ce9f
+
+
